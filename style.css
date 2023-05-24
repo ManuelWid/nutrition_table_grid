@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.grid2 p {
+    font-size: .7rem;
+}
+
+/* the wrapper holds everything, nothing is outside of that div */
+.wrap {
+    width: 300px;
+    margin: 5em auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* line classes are made for div element to make the dividing lines */
+.fatline {
+    height: .5em;
+    background-color: black;
+}
+
+.thinline {
+    height: 1px;
+    background-color: black;
+}
+
+.midline {
+    height: .25em;
+    background-color: black;
+}
+
+/* grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 40% repeat(3,1fr);
+}
+
+/* span all columns */
+.grid100 {
+    grid-column: 1/-1;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.text-small {
+    font-size: .7rem;
+}
+
+/* used for indentation on the first paragraph within a flexbox */
+.tabp {
+    padding-left: 1rem;
+}
+
+/* used on the line divs to indent them equal to the paragraphs */
+.tabm {
+    margin-left: 1rem;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: end;
+}
+
+.align-right {
+    justify-content: end;
+}
+
+/* literally in the name, only applies to the very last 
+paragraph as it has completely different style */
+.lastrow {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
